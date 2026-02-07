@@ -1,5 +1,6 @@
 
-import "thumbnail.css"
+import "./Thumbnail.css";
+
 function Thumbnail(){
     return (
         <div id="thumbnail">
@@ -7,6 +8,6 @@ function Thumbnail(){
         </div>
     )
 }
-
+ 
 
 export default Thumbnail;

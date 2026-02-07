@@ -1,12 +1,12 @@
 import './App.css'
-import Thumbnail from './thumbnail'
+import Thumbnail from './Thumbnail.jsx';
 
 
 
 function App() {
   return (
     <>
-    <thumbnail/>
+    <Thumbnail/>
     </>
   )
 }
