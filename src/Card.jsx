@@ -3,11 +3,11 @@ import Thumbnail from './thumbnail';
 import './Thumbnail.css'
 import Title from './title';
 
-function Card(){
+function Card({heading,chennel,views,time}){
     return (
         <div id="cards">
             <Thumbnail/>
-            <Title/>
+            <Title heading={heading} chennel={chennel} views={ views }time={ time }/>
         </div>
     )
 }

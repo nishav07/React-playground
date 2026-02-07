@@ -46,3 +46,10 @@ button {
   display: flex;
   gap: 4rem;
 }
+
+#cardSection{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+}
