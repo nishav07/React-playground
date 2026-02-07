@@ -1,12 +1,13 @@
-import './App.css'
-import Card from './Card'
+import './App.css';
+import Card from './Card';
+import Msgbox from './Msgbox.jsx';
 
 function App() {
   return (
-    <div id='cardSection'>
-    <Card heading="How to cook" chennel="cokker" views ="100K" time="1 days ago"/>
-    <Card heading="How to beacme aa dev in 2026" chennel="NishavCanCode" views ="100M" time="3 hours ago"/>
-    </div>
+   <>
+    <Card heading="How to beacame a dev in 2026" chennel="NishavCanCode" views ="100M" time="3 hours ago"/>
+    <MsgBox user="Rishav" color:"red" />
+   </>
   )
 }
 
