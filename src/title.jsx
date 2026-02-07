@@ -1,3 +1,4 @@
+import "./Title.css";
 
 function Title(){
     let chennel = "NISHAV CODE";

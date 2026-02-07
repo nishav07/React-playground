@@ -1,5 +1,20 @@
+*{
+    text-align: start;
+    margin: 0;
+    padding: 2px;
+}
 h1{
-    font-size: 1rem;
-    font-weight: 300;
+    font-size: 1.25rem;
+    font-weight: 400;
     color: black;
 }
+
+p{
+   font-size: 0.85rem;
+}
+
+#Cname{
+    font-size: 0.95rem;
+}
+
+

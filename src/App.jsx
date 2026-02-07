@@ -1,12 +1,12 @@
 import './App.css'
-import Thumbnail from './Thumbnail.jsx';
+import Card from './Card'
 
 
 
 function App() {
   return (
     <>
-    <Thumbnail/>
+    <Card/>
     </>
   )
 }
