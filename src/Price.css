@@ -1,0 +1,21 @@
+#price{
+    background: #f5d32b;
+    color: black;
+}
+
+#oldPrice{
+    text-decoration: line-through;
+    font-weight: 500;
+}
+
+
+
+#newPrice{
+    color: black;
+    font-weight: 800;
+}
+
+#oldPrice span{
+    text-decoration: none;
+    font-weight: 500;
+}

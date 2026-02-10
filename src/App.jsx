@@ -5,8 +5,8 @@ import Msgbox from './Msgbox.jsx';
 function App() {
   return (
    <>
-    <Card heading="How to beacame a dev in 2026" chennel="NishavCanCode" views ="100M" time="3 hours ago"/>
-    <MsgBox user="Rishav" color:"red" />
+    <Card heading="BOAT headphone" tags={["best gadget","Best Price"]} oldPrice={200} newPrice={49}/>
+    <Card heading="NVIDIA GPus" tags={["fastest GPUs","Best price"]} oldPrice={200} newPrice={49}/>
    </>
   )
 }
