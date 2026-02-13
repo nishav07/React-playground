@@ -11,7 +11,7 @@ function lol(){
 function Btn({text,nxt}){
     return(<>
     <button onClick={sayHi}>{text}</button>
-    <button onScroll={lol} >{nxt}</button>
+    <button onMouseOver={lol} >{nxt}</button>
     </>)
 }
 
