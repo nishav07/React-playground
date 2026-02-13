@@ -1,13 +1,17 @@
 import "./button.css";
 
 function sayHi(){
-    console.lpg("hello broooooooo")
+    console.log("hello broooooooo")
 }
 
+function lol(){
+    console.log("lollllllllllllllllll")
+}
 
-function Btn({text}){
+function Btn({text,nxt}){
     return(<>
     <button onClick={sayHi}>{text}</button>
+    <button onScroll={lol} >{nxt}</button>
     </>)
 }
 

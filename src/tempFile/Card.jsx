@@ -8,7 +8,7 @@ function Card({heading,tags,oldPrice,newPrice}){
         <div id="cards">
             <Title heading={heading}  tags={tags}/>
             <Price oldPrice={oldPrice} newPrice={newPrice}/>
-            <Btn text={"click meee!!"}/>
+            <Btn text={"click meee!!"} nxt={"scroll kr"}/>
         </div>
     )
 }
