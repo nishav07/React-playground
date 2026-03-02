@@ -18,11 +18,19 @@ a{
   font-size: 1rem;
 }
 
-button {
+/* button {
   padding:1rem;
   border-radius: 5rem;
   color: white;
   background:red;
+} */
+
+button{
+    padding: 1.2rem;
+    background: #000;
+    color: white;
+    border-radius: 1rem;
+    margin-top: 1rem;
 }
 
 #navbar{
