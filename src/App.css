@@ -26,11 +26,16 @@ a{
 } */
 
 button{
-    padding: 1.2rem;
+    padding: 1rem;
     background: #000;
     color: white;
     border-radius: 1rem;
-    margin-top: 1rem;
+    margin: 1rem;
+}
+
+input{
+  padding: 0.5rem;
+  border-radius: 1rem;
 }
 
 #navbar{
