@@ -27,6 +27,19 @@ export default function TodoList () {
 
     let deleteFromTodo = (id) => {
         console.log("trying to delete this shitt",id);
+        setTodo((prev) => prev.filter((t) => t.id != id))// delete kek liyee humeshaaaaa fiilter use krkna ha
+    }
+
+    let upperCaseAll = () => {
+        setTodo( (prev)  => {
+            return prev.map((todo) => {
+                return {
+                    ...todo,
+                    task:todo.task.toUpperCase(),
+                    
+                }
+            })
+        })
     }
 
     return (<div>
@@ -37,7 +50,7 @@ export default function TodoList () {
 <br />
 
 <ul>
-    {todo.map((todos) => (
+    { todo.map((todos) => (
         <li key={todos.id}>
             <span>{todos.task}</span>
             &nbsp;
@@ -50,6 +63,8 @@ export default function TodoList () {
         
     ))}
 </ul>
+
+<button onClick={upperCaseAll}>ToUpperCase</button>
     </div>
     )
 }
