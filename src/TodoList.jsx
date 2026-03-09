@@ -32,7 +32,7 @@ export default function TodoList () {
 
     let upperCaseAll = () => {
         setTodo( (prev)  => {
-            return prev.map((todo) => {
+            return prev.map((todo) => {  //sab array mai change krne ke liye mapppppp use krna hai
                 return {
                     ...todo,
                     task:todo.task.toUpperCase(),
@@ -40,6 +40,13 @@ export default function TodoList () {
                 }
             })
         })
+    }
+
+    let reverseArr = () => {
+        let nxtTodo = [...todo];
+        let revsseTodo = nxtTodo.reverse();
+        setTodo(revsseTodo);
+
     }
 
     return (<div>
@@ -65,6 +72,7 @@ export default function TodoList () {
 </ul>
 
 <button onClick={upperCaseAll}>ToUpperCase</button>
+<button onClick={reverseArr}>Reverse</button>
     </div>
     )
 }
