@@ -5,7 +5,7 @@ import { v4 as uuidv4 } from 'uuid';
 
 
 export default function TodoList () {
-    let [todo,setTodo] = useState([{task:"sample task", id:uuidv4()}]);
+    let [todo,setTodo] = useState([{task:"sample task", id:uuidv4(),done:false}]);
     let [newTodo,setNewTodo] = useState([""])
     // console.log(`todo before rendered ${todo.id}`);
 
@@ -20,7 +20,7 @@ export default function TodoList () {
         console.log("Naya todo hai ye",newTodo);
         console.log("new task add krna haii");
         setTodo((prevTodo) => {
-            return [...prevTodo,{task:newTodo,id:uuidv4()}];
+            return [...prevTodo,{task:newTodo,id:uuidv4(),done:false}];
         })
         setNewTodo("");
     }
@@ -49,6 +49,19 @@ export default function TodoList () {
 
     }
 
+    ////////////////////////////////////////////////
+
+    let markAsDone = (id) => {
+        setTodo( (prev)  =>  prev.map((t) => {  //single index of array mai bhi change krne ke liye map hi use krna hai
+                if(id === t.id){
+                    return {...t,done:true}
+                } else {
+                    return t
+                }
+            })
+        )
+    }
+
     return (<div>
         <input type="text" placeholder="enter your work" value={newTodo} onChange={updateTodo} />
 <button onClick={addNewTask}>Add</button>
@@ -59,12 +72,15 @@ export default function TodoList () {
 <ul>
     { todo.map((todos) => (
         <li key={todos.id}>
-            <span>{todos.task}</span>
+            <span style={{textDecoration:todos.done? "line-through":"none"}}>{todos.task}</span>
             &nbsp;
             &nbsp;
             <button onClick={() => {
                 deleteFromTodo(todos.id)
             }}>delete</button>
+            <button onClick={() => {
+                markAsDone(todos.id)
+            }}>Mark As Done</button>
         </li>
 
         
