@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-
+//single page thiking without logical and persentaional components
 
 export default function LotteryGame(){
 
