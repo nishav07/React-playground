@@ -4,6 +4,7 @@
   max-width: 1280px;
   text-align: center;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 2rem;
@@ -66,4 +67,15 @@ input{
   align-items: center;
   justify-content: center;
   gap: 3rem;
+}
+
+span {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+.Ticket {
+  padding: 4rem;
+  border: 4px solid black;
+  border-radius: 2rem;
 }

@@ -3,9 +3,9 @@ import TicketNum from "./TicketNum"
 export default function Ticket({ticket}){
     console.log(ticket)
 
-    return(<div>
+    return(<div className="Ticket">
          {ticket.map((n,idx) => (
-        <TicketNum Num={n}/>
+        <TicketNum key={idx} Num={n}/>
     ))}
     </div>)
 }

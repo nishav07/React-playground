@@ -1,6 +1,6 @@
 function generateTicket(n){
     let arr = new Array(n);
-    for (let i = 0; i <= n; i++) {
+    for (let i = 0; i < n; i++) {
         arr[i] = Math.floor(Math.random() * 10);
     }
 
@@ -8,9 +8,7 @@ function generateTicket(n){
 }
 
 function sum(arr){
-    return arr.reduce((prev,curr) => (
-        prev + curr
-    ),0)
+    return arr.reduce((prev,curr) => prev + curr,0)
 }
 
 export {generateTicket,sum}

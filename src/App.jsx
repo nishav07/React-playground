@@ -4,14 +4,15 @@ import Msgbox from './tempFile/Msgbox.jsx';
 import Video from './Video.jsx';
 import TodoList from './TodoList.jsx';
 import LotteryGame from './LotteryGame.jsx';
-import Ticket from './Ticket.jsx';
+
+import Lottery from './Lottery.jsx';
 
 function App() {
 
   
   return (
    <>
-   <Ticket ticket={["2","6","8","20"]}/>
+   <Lottery n={3} winningSum={18}/>
    {/* <LotteryGame/> */}
    </>
   )
