@@ -10,7 +10,8 @@ export default function Form(){
     }
     return(<>
     <form action="/">
-    <input type="text" placeholder="enter your name"  onChange={updateInput} />
+    <label htmlFor="input">Full name</label>
+    <input type="text" placeholder="enter your name" id="input"  onChange={updateInput} />
     <p>{fullName}</p>
     <button>Submit</button>
     </form>
