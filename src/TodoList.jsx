@@ -11,6 +11,7 @@ export default function TodoList () {
 
     let updateTodo = (e) => {
         // console.log(e.target.value);
+        e.preventDefault();
         setNewTodo(e.target.value);
     }
 

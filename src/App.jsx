@@ -7,7 +7,7 @@ import LotteryGame from './LotteryGame.jsx';
 import Lottery from './Lottery.jsx';
 import { sum } from './helper.js';
 import Form from './Form.jsx';
-
+import Counter from './Counter.jsx';
 function App() {
 
   let winCondition = (ticket) => {
@@ -17,7 +17,8 @@ function App() {
   //passing fucntion as a props
   return (
    <>
-   <Form/>
+   {/* <Form/> */}
+   <Counter></Counter>
    {/* <Lottery n={3} winningSum={15}/>    */}
    {/* <LotteryGame/> */}
    </>
