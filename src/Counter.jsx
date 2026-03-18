@@ -8,10 +8,10 @@ export default function Counter(){
         setCountx((prev) => prev + 1)
     }
 
+
     let updateCounty = () => {
         setCounty((prev) => prev + 1)
     }
-
 
     useEffect(function print(){
         console.log("use effect has been calleddd") //koi bhi sate variable chnage pe ye chlane lagta hai

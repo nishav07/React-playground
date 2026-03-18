@@ -8,6 +8,7 @@ import Lottery from './Lottery.jsx';
 import { sum } from './helper.js';
 import Form from './Form.jsx';
 import Counter from './Counter.jsx';
+import Jokes  from './Jokes.jsx';
 function App() {
 
   let winCondition = (ticket) => {
@@ -18,9 +19,10 @@ function App() {
   return (
    <>
    {/* <Form/> */}
-   <Counter></Counter>
+   {/* <Counter></Counter> */}
    {/* <Lottery n={3} winningSum={15}/>    */}
    {/* <LotteryGame/> */}
+   <Jokes></Jokes>
    </>
   )
 }
